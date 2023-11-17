@@ -11,9 +11,9 @@ class Chatbot():
         }
 
         self.acoes = {
-            "atualizar pagamento" : "Vá no seu perfil em nosso site e clique em metódo de pagamento.",
-            "acompanhar pedido" : "Vá em nosso site e clique em meus pedidos. Por lá será possível ver o status da sua entrega.",
-            "inicio de conversa" : "O que deseja?"
+            "atualizar pagamento" : "Vá no seu perfil em nosso site e clique em metódo de pagamento. Posso ajudar com mais alguma coisa? (Digite 'sair' para encerrar o bate papo) ",
+            "acompanhar pedido" : "Vá em nosso site e clique em meus pedidos. Por lá será possível ver o status da sua entrega. Posso ajudar com mais alguma coisa? (Digite 'sair' para encerrar o bate papo) ",
+            "inicio de conversa" : "Olá, como posso ajudar? (Digite 'sair' para encerrar o bate papo) "
         }
 
     def verifica_intencao(self):
@@ -24,7 +24,7 @@ class Chatbot():
             else: 
                 pass
 
-        print("Não encontrei")
+        print("Não compreendi")
 
     def verifica_acao(self):
        if self.intencao in self.acoes:
@@ -32,8 +32,9 @@ class Chatbot():
     
 
     def inicia_chatbot(self):
+        print("Bem vindo a ManuStore! Como posso ajudar?")
         while True:
-            self.chave = input("Olá, o que deseja? (Digite 'sair' para encerrar o bate papo) ")
+            self.chave = input("Digite: ")
 
             if self.chave == 'sair':
                 print("Até a próxima!")
