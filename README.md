@@ -1,4 +1,4 @@
-# prova 1 - Mód 8
+# Prova 1 - Mód 8
 ## Aluno: Emanuele Lacerda Morais Martins
 
 ## Para rodar:
